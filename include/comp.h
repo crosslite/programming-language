@@ -14,6 +14,6 @@ extern int comp_main(int argc, char **argv);
 
 extern int comp_init(int argc, char **argv);
 
-void void print_usage(void);
+extern void print_usage(void);
 
 #endif /* HEADER_comp */
