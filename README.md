@@ -1,4 +1,5 @@
 ## programming language
+**A compiled low-level programming language.**
 
 ## installation
 ### debian-based linux
