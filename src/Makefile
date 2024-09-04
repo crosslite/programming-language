@@ -4,6 +4,9 @@ INCLUDE_DIR = ../include/
 
 CFLAGS += -I$(INCLUDE_DIR)
 
+OBJS += main.o
+OBJS += comp.o
+
 TARGET = ../compiler
 
 all: $(TARGET)
