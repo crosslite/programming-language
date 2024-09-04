@@ -9,6 +9,7 @@
 
 static char *input_files_paths[32];
 static FILE *input_files[32];
+static int input_files_count;
 
 static char *output_file_path;
 static FILE *output_file;

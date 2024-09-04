@@ -4,10 +4,10 @@ int comp_main(int argc, char **argv)
 {
         comp_init(argc, argv);
 
-        printf("%s\n", output_file_path);
-        printf("%s\n", input_files_paths[0]);
-        printf("%s\n", input_files_paths[1]);
-        printf("%s\n", input_files_paths[2]);
+        for (int i = 0; i < input_files_count; ++i)
+                input_files[i] = fopen(input_files_paths[i], "r");
+
+        output_file = fopen(output_file_path, "w");
 
         return 0;
 }
@@ -15,6 +15,7 @@ int comp_main(int argc, char **argv)
 int comp_init(int argc, char **argv)
 {
         --argc; ++argv;
+        input_files_count = 0;
 
         for (int i = 0, k = 0; i < argc; ++i) {
                 if (!strcmp(argv[i], "--help")) {
@@ -33,6 +34,7 @@ int comp_init(int argc, char **argv)
                 }
 
                 input_files_paths[k] = argv[i];
+                ++input_files_count;
                 ++k;
         }
 }
