@@ -13,5 +13,6 @@ sh ./install.sh
 ```
 
 ## tasks
+- [x] Processing command line arguments
 ### preprocessor
 - [ ] Removing unnecessary characters
