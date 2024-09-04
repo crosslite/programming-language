@@ -7,8 +7,8 @@
 ## installation
 ### debian-based linux
 ```
-git clone ...
-cd ...
+git clone https://github.com/crosslite/programming-language.git
+cd programming-language
 sh ./install.sh
 ```
 
