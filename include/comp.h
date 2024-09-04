@@ -10,6 +10,9 @@
 static char *input_files_paths[32];
 static FILE *input_files[32];
 
+static char *output_file_path;
+static FILE *output_file;
+
 extern int comp_main(int argc, char **argv);
 
 extern int comp_init(int argc, char **argv);
