@@ -6,5 +6,5 @@ int main(void)
                 a = a * i;
         }
 
-        return 0;
+        return  0;
 }
