@@ -22,7 +22,7 @@ int preproc_main(FILE **input_files, FILE *output_file)
                 ++k;
         }
 
-        fwrite(buff_2, sizeof(char), fsize, output_file);
+        fwrite(buff_2, sizeof(char), strlen(buff_2), output_file);
 
         return 0;
 }
