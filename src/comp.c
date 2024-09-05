@@ -1,4 +1,5 @@
 #include "comp.h"
+#include "preproc.h"
 
 int comp_main(int argc, char **argv)
 {
@@ -8,6 +9,8 @@ int comp_main(int argc, char **argv)
                 input_files[i] = fopen(input_files_paths[i], "r");
 
         output_file = fopen(output_file_path, "w");
+
+        preproc_main(input_files, output_file);
 
         return 0;
 }

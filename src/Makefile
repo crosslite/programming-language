@@ -6,6 +6,7 @@ CFLAGS += -I$(INCLUDE_DIR)
 
 OBJS += main.o
 OBJS += comp.o
+OBJS += preproc.o
 
 TARGET = ../compiler
 
