@@ -14,9 +14,7 @@ int preproc_main(FILE **input_files, FILE *output_file)
         fread(buff_1, fsize, 1, input_files[0]);
 
         for (int i = 0, k = 0; i < fsize; ++i) {
-                if (buff_1[i] == ' ' && buff_1[i+1] == ' ')
-                        continue;
-                if (buff_1[i] == '\n')
+                if (buff_1[i] == '\n' || buff_1[i] == ' ')
                         continue;
                 buff_2[k] = buff_1[i];
                 ++k;
